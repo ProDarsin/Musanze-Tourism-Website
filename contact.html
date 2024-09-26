@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musanze Tourism Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        body, html {
+            height: 100%;
+        }
+
+        /* Make the page container full height, with footer sticking at the bottom */
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 50px auto;
+        }
+
+        .contact-header {
+            margin-bottom: 30px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Tourism</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tourist.html">Tourist Sites</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="maps.html">Maps</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content container-fluid contact-form py-5">
+            <h2 class="text-center contact-header">Contact Us</h2>
+            <p class="text-center">If you have any questions, feel free to reach out to us using the following contact details:</p>
+
+            <div class="contact-info text-center">
+                <p><strong>Email:</strong> <a href="mailto:ndungutsederrick19@gmail.com">ndungutsederrick19@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+250786427961">+250 786 427 961</a></p>
+
+                <p><strong>Email:</strong> <a href="mailto:donaniyi1994@gmail.com">donaniyi1994@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+250788745516">+250 788 745 516</a></p>
+            </div>
+        </div>
+
+        <footer class="bg-light text-center py-4 mt-5">
+            <p>&copy; 2024 Tourism Website</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
