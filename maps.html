@@ -10,15 +10,39 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <style>
-        /* Adding a hover effect to images */
-        .image-hover img {
+        /* Ensure container doesn't overlap */
+        .image-hover {
             transition: transform 0.3s ease;
-            /* Smooth transition */
+            padding: 10px;
+            /* Adding padding around the container */
         }
 
-        .image-hover img:hover {
-            transform: scale(1.2);
-            /* Zoom-in effect on hover */
+        .image-hover:hover {
+            transform: scale(1.05);
+            /* Slight scaling on hover */
+        }
+
+        /* Prevent image and text from overlapping */
+        .image-hover img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .image-hover:hover img {
+            transform: scale(1.1);
+            /* Slight zoom-in for the image */
+        }
+
+        .image-hover p {
+            transition: transform 0.3s ease;
+            padding-top: 15px;
+            /* Adding padding to the paragraph to keep it under the image */
+        }
+
+        .image-hover:hover p {
+            transform: scale(1.05);
+            /* Slight scaling for the paragraph */
         }
     </style>
 </head>
@@ -38,7 +62,7 @@
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="tourist.html">Tourist Sites</a>
+                        <a class="nav-link" href="tourist.html">Touristic Sites</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="maps.html">Maps</a>
@@ -53,27 +77,35 @@
 
     <div class="container mt-5">
         <h2 class="text-center p-5">Explore Our Touristic Sites</h2>
-        <p class="text-center mb-4"></p>
-        Discover the beauty and adventure of Musanze through our carefully curated selection of touristic sites. From
+        <p class="text-center mb-4">Discover the beauty and adventure of Musanze through our carefully curated selection of touristic sites. From
         majestic volcanoes to serene lakes, there's something for every traveler. Browse our collection below and learn
-        more about the unique locations that make Musanze a top destination for nature lovers and explorers alike.
-        </p>
+        more about the unique locations that make Musanze a top destination for nature lovers and explorers alike.</p>
         <!-- Bootstrap Grid for 5 images with hover effect -->
-        <div class="row text-center image-hover">
-            <div class="col-lg-6 col-md-6 mb-4">
+        <div class="row text-center">
+            <div class="col-lg-6 col-md-6 mb-4 image-hover">
                 <img src="img/casestudy.PNG" alt="Map Image 1" class="img-fluid rounded">
+                <p>This map is used to outline the boundaries of Musanze District, located in the Northern Province of Rwanda and it
+                    shows all the sectors in musanze district it is also a key tourist destination to travel to in Rwanda.</p>
             </div>
-            <div class="col-lg-6 col-md-6 mb-4">
+            <div class="col-lg-6 col-md-6 mb-4 image-hover">
                 <img src="img/elevation.PNG" alt="Map Image 2" class="img-fluid rounded">
+                <p>This is a Map showing the elevation of musanze according to their classes they are differentiated
+                    with the colour according to the height.</p>
             </div>
-            <div class="col-lg-6 col-md-6 mb-4">
+            <div class="col-lg-6 col-md-6 mb-4 image-hover">
                 <img src="img/musanzeroad.PNG" alt="Map Image 3" class="img-fluid rounded">
+                <p>This is a Map showing all the touristic sites and all the road they have access on to support
+                    transport movement.</p>
             </div>
-            <div class="col-lg-6 col-md-6 mb-4">
+            <div class="col-lg-6 col-md-6 mb-4 image-hover">
                 <img src="img/touristisite.PNG" alt="Map Image 4" class="img-fluid rounded">
+                <p>The map below shows different sites and other touristic facilities location , this map represent
+                    Musanze district and its sectors.</p>
             </div>
-            <div class="col-lg-6 col-md-6 mb-4">
+            <div class="col-lg-6 col-md-6 mb-4 image-hover">
                 <img src="img/another.jpg" alt="Map Image 5" class="img-fluid rounded">
+                <p>This image below shows different site to be visit and tourism facilities like hotels and markets for
+                    tourists at Musanze district.</p>
             </div>
         </div>
     </div>
